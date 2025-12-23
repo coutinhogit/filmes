@@ -1,0 +1,43 @@
+:root {
+  /* Paleta Síntese Jr */
+  --sintese-blue-dark: #0047BA;   
+  --sintese-blue-light: #2D9CDB;  
+  --sintese-yellow: #FFC72C;      
+  --sintese-white: #FFFFFF;
+  --sintese-gray: #F4F7FA;        
+  --text-color: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; 
+  background-color: var(--sintese-gray); 
+  color: var(--text-color);
+}
+
+
+.btn-primary {
+  background-color: var(--sintese-blue-light);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--sintese-blue-dark);
+}
+
+.btn-accent {
+  background-color: var(--sintese-yellow);
+  color: var(--sintese-blue-dark);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}

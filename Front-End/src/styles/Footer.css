@@ -1,0 +1,13 @@
+.footer-container {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--sintese-blue-dark); 
+  color: var(--sintese-white);
+  border-top: 1px solid var(--sintese-blue-light);
+}
+
+.footer-container p {
+  opacity: 0.9;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,72 @@
+.filters-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  border-top: 4px solid var(--sintese-blue-light);
+}
+
+.filters-form {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
+}
+
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box; 
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: var(--sintese-blue-light);
+}
+
+
+.filter-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+
+.custom-select {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--sintese-blue-dark);
+  font-weight: 500;
+  flex: 1; 
+  min-width: 150px;
+}
+
+.custom-select:hover {
+  border-color: var(--sintese-blue-light);
+}
+
+.btn-filter {
+  background-color: var(--sintese-yellow);
+  color: var(--sintese-blue-dark);
+  border: none;
+  padding: 10px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: filter 0.2s;
+  min-width: 120px;
+}
+
+.btn-filter:hover {
+  filter: brightness(0.95);
+}

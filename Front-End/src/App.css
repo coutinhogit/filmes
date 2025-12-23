@@ -1,0 +1,39 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--sintese-gray); 
+}
+
+.main-content {
+  flex: 1; 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+
+.section-title {
+  color: var(--sintese-blue-dark);
+  margin-bottom: 20px;
+  border-left: 5px solid var(--sintese-yellow); 
+  padding-left: 10px;
+}
+
+
+.movie-grid {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+
+.loading-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--sintese-blue-light);
+  margin-top: 50px;
+}
