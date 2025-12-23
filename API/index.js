@@ -7,12 +7,12 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use = (cors());
+app.use(cors());
 app.use(express.json());
 
 let movies = [];
 
-fs.createReadStream('imdb_top_1000.csv')
+fs.createReadStream('data.csv')
   .pipe(csv({ mapHeaders: ({ header }) => header.trim().toLowerCase() }))
   .on('data', (data) => {
     //Normalização/remoção de espaços em branco e conversão de campos numéricos comuns
